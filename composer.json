@@ -1,0 +1,17 @@
+{
+    "name": "matrix-platform/laravel",
+    "authors": [
+        {
+            "name": "jrealm",
+            "email": "jrealm@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "matrix\\laravel\\": "laravel"
+        }
+    },
+    "license": "MIT",
+    "require": {
+    }
+}
