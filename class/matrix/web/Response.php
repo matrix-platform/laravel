@@ -32,7 +32,11 @@ class Response {
         $location = $this->redirect();
 
         if ($location) {
-            return redirect()->away($location, 302, $headers);
+            if (!preg_match('/^https?:\/\//', $location)) {
+                $location = get_url($location);
+            }
+
+            return redirect($location, 302, $headers);
         }
     }
 
